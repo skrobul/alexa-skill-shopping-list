@@ -58,7 +58,7 @@ This is an extensible Alexa Companion Skill.
 
 - **API_TOKEN**: API token to authenticate against the API
 
-- **BACKEND**: The backend to connect to. Supported: 'hass' and 'todo'
+- **BACKEND**: The backend to connect to. Supported: 'hass', 'todo' and 'kitchenowl' (which is just kitchenowl through hass)
 
 ## Deployment
 
@@ -110,4 +110,5 @@ ask dialog --locale de-DE
 
 ## Language support
 
+- English
 - German

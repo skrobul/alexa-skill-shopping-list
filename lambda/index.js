@@ -7,6 +7,9 @@ const maxNoOfItemsReported = 5;
 if (process.env.BACKEND === 'hass') {
   const HomeAssistant = require('./backends/home-assistant');
   api = new HomeAssistant();
+} else if (process.env.BACKEND === 'kitchenowl') {
+    const KitchenOwl = require('./backends/kitchenowl');
+    api = new KitchenOwl();
 } else {
   const ToDoList = require('./backends/to-do-list');
   api = new ToDoList();
